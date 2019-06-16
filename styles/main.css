@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,700|Montserrat|Open+Sans|Playfair+Display:400,700&display=swap');
+/* The hero image */
+.main-image {
+/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("IMG_0337.JPG");
+  
+/* Set a specific height */
+    height: 100%;
+  
+/* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    font-family: "Montserrat", san-serif;
+    color: black;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    float: left;
+    color: black !important;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color: #ddd;
+}
+  
+/* Add a color to the active/current link */
+.navbar a.active {
+    background-color: #ddd;
+}
+
+body, html {
+    height: 100%;
+    width:100%;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Playfair Display", serif;
+  
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.task {
+  font-style: italic;
+  margin: 0;
+}
+
+
+/* Place text in the middle of the image */
+.main-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    
+}
+
+p, ul {
+  margin: 10px 40px;
+  font-size: 14px;
+}
+
+
