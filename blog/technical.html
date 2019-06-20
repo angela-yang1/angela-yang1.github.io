@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link href="../styles/main.css" rel="stylesheet" type="text/css" />
     <head>
+        <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+        <script src="https://use.fontawesome.com/facf9fa52c.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Technical Blog</title>
   </head>
   <body>
-    <div>
-      <h2>Sprint 1: The Story of Te Houtaewa (PAGE heading)</h2>
+    <div class="navbar">
+        <a href="../index.html">HOME</a>
+        <a href="./core.html">CORE BLOG</a>
+        <a class="active" href="#">TECHNICAL BLOG</a>
+    </div>
+    
+    <h1>TECHNICAL BLOG</h1>
+    <section class="accordion">
+      <input type="checkbox" name="collapse" id="handle1">
+      <h2 class="handle">
+        <label for="handle1">Sprint One - The Story of Te Houtaewa</label>
+      </h2>
+      <div class="content">
       <h3>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em> (Optional SUB title) </h3>
       <h4>10 November 2010</h4>
       <p>Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.</p>
       <p>Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.</p>
       <p>While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.</p>
-    </div> 
-  
-    <div>
-      <h2>Sprint 2: CSS Concepts - Using Classes vs IDs</h2>
-      <p>Overview of IDs:</p>
+      </div>
+    </section>
+    <section class="accordion">
+      <input type="checkbox" name="collapse2" id="handle2">
+      <h2 class="handle">
+        <label for="handle2">Sprint Two - CSS Concepts: Using Classes vs IDs</label>
+      </h2>
+      <div class="content">
+        <p class="task">Overview of the id Selector:</p>
       <ul>
-        <li>Use # to identify IDs in a CSS file</li>
+        <li>Use # to identify id's in a CSS file</li>
         <li>IDs are unique</li>
+        <li>Uses the id attribute of an HTML element e.g. id="name"</li>
         <li>Each element in HTML can have only one ID</li>
         <li>Each page can have only one element with that ID</li>
         <li>When you want to select something specific</li>
       </ul>
-      <p>Overview of Classes:</p>
+      <img src="../styles/id_selector.png">
+      <p class="fig">Fig 1. Example of the id selector</p></br>
+      <p class="task">Overview of the class Selector:</p>
       <ul>
         <li>Use . dot to identify classes in a CSS file</li>
         <li>Classes are not unique</li>
@@ -36,9 +55,21 @@
         <li>Styling information that needs to be applied to multiple objects on a page should be done with a class</li>
         <li>Used to apply the same set of styling</li>
       </ul>
-      <p class="task">What are the best practices associated with using classes vs. IDs?</p>
-      <p>Use a class when you want to consistently style multiple elements – it is good for when you have more than one element on site that shares the same style. A given element can also have more than one class associated to it, whereas an ID you can only have one</p>
-      <p>Use ID when there is only one single element on the page that will use the style – it is good for using on “main” page content such as main headings.</p>
-    </div>  
+      <img src="../styles/class_selector.png">
+      <p class="fig">Fig 2. Example of the class selector</p></br>
+      <p class="task">What are the best practices associated with using classes vs. ids?</p>
+      <p>Use a class when you want to consistently style multiple elements – it is good for when you have more than one element on your page that shares the same style e.g. body text. A given element can also have more than one class associated to it, whereas an id you can only have one.</p>
+      <p>Use the id selector when there is only one single element on the page that will use the style - it is good for using on “main” page content such as headings or titles.</p>
+      </div>
+    </section>
+    <section class="accordion">
+      <input type="checkbox" name="collapse2" id="handle3">
+      <h2 class="handle">
+        <label for="handle3">Sprint Three</label>
+      </h2>
+      <div class="content">
+        <p></p>
+      </div>
+    </section>
   </body>
 </html>
